@@ -1,0 +1,2114 @@
+{
+  "COS(=O)(=O)OC": {
+    "name": "二甲基硫酸酯",
+    "cid": 6497,
+    "h_codes": [
+      "H227",
+      "H301",
+      "H310",
+      "H314",
+      "H317",
+      "H318",
+      "H319",
+      "H330",
+      "H334",
+      "H335",
+      "H341",
+      "H350",
+      "H361",
+      "H370",
+      "H373",
+      "H402"
+    ],
+    "statements": {
+      "H301": "Toxic if swallowed",
+      "H314": "Causes severe skin burns and eye damage",
+      "H317": "May cause an allergic skin reaction",
+      "H330": "Fatal if inhaled",
+      "H341": "Suspected of causing genetic defects",
+      "H350": "May cause cancer",
+      "H310": "Fatal in contact with skin",
+      "H318": "Causes serious eye damage",
+      "H319": "Causes serious eye irritation",
+      "H335": "May cause respiratory irritation",
+      "H334": "May cause allergy or asthma symptoms or breathing difficulties if inhaled",
+      "H227": "Combustible liquid",
+      "H402": "Harmful to aquatic life",
+      "H361": "Suspected of damaging fertility or the unborn child",
+      "H370": "Causes damage to organs",
+      "H373": "May causes damage to organs through prolonged or repeated exposure"
+    },
+    "signal": [
+      "Danger",
+      "Warning"
+    ],
+    "h_code_percent": {
+      "H301": 100.0,
+      "H310": 43.9,
+      "H314": 100.0,
+      "H317": 100.0,
+      "H318": 21.2,
+      "H319": 43.9,
+      "H330": 100.0,
+      "H335": 52.7,
+      "H341": 100.0,
+      "H350": 100.0,
+      "H334": 97.4
+    },
+    "fetched_at": "2026-09-13 23:19:50"
+  },
+  "Cn1cnc2c1c(=O)[nH]c(=O)n2C": {
+    "name": "可可碱",
+    "cid": 5429,
+    "h_codes": [
+      "H302",
+      "H319",
+      "H341",
+      "H351",
+      "H360",
+      "H370"
+    ],
+    "statements": {
+      "H302": "Harmful if swallowed",
+      "H319": "Causes serious eye irritation",
+      "H351": "Suspected of causing cancer",
+      "H341": "Suspected of causing genetic defects",
+      "H360": "May damage fertility or the unborn child",
+      "H370": "Causes damage to organs"
+    },
+    "signal": [
+      "Danger",
+      "Warning"
+    ],
+    "h_code_percent": {
+      "H302": 98.6,
+      "H319": 47.7,
+      "H351": 28.5
+    },
+    "fetched_at": "2026-09-13 23:19:53"
+  },
+  "Cn1c(=O)c2[nH]cnc2n(C)c1=O": {
+    "name": "茶碱",
+    "cid": 2153,
+    "h_codes": [
+      "H301",
+      "H302",
+      "H360",
+      "H361",
+      "H362",
+      "H370",
+      "H372",
+      "H402"
+    ],
+    "statements": {
+      "H360": "D: May damage the unborn child",
+      "H301": "Toxic if swallowed",
+      "H302": "Harmful if swallowed",
+      "H402": "Harmful to aquatic life",
+      "H361": "Suspected of damaging fertility or the unborn child",
+      "H362": "May cause harm to breast-fed children",
+      "H370": "Causes damage to organs",
+      "H372": "Causes damage to organs through prolonged or repeated exposure"
+    },
+    "signal": [
+      "Danger"
+    ],
+    "h_code_percent": {
+      "H301": 88.0,
+      "H302": 11.7
+    },
+    "fetched_at": "2026-09-13 23:19:56"
+  },
+  "CNc1c(N)n(C)c(=O)n(C)c1=O": {
+    "name": "6-氨基-1,3-二甲基-5-甲氨基尿嘧啶",
+    "cid": 4384087,
+    "h_codes": [],
+    "statements": {},
+    "signal": [],
+    "error": "HTTP Error 404: PUGVIEW.NotFound",
+    "fetched_at": "2026-09-13 23:19:59"
+  },
+  "O=CO": {
+    "name": "甲酸",
+    "cid": 284,
+    "h_codes": [
+      "H226",
+      "H290",
+      "H302",
+      "H314",
+      "H318",
+      "H331",
+      "H332",
+      "H335",
+      "H361",
+      "H370",
+      "H372",
+      "H373",
+      "H402"
+    ],
+    "statements": {
+      "H226": "Flammable liquid and vapor",
+      "H290": "May be corrosive to metals",
+      "H302": "Harmful if swallowed",
+      "H314": "Causes severe skin burns and eye damage",
+      "H318": "Causes serious eye damage",
+      "H331": "Toxic if inhaled",
+      "H332": "Harmful if inhaled",
+      "H402": "Harmful to aquatic life",
+      "H370": "Causes damage to organs",
+      "H373": "May causes damage to organs through prolonged or repeated exposure",
+      "H361": "Suspected of damaging fertility or the unborn child",
+      "H372": "Causes damage to organs through prolonged or repeated exposure",
+      "H335": "May cause respiratory irritation"
+    },
+    "signal": [
+      "Danger"
+    ],
+    "h_code_percent": {
+      "H226": 21.1,
+      "H302": 18.3,
+      "H314": 99.7,
+      "H318": 19.2,
+      "H331": 17.9
+    },
+    "fetched_at": "2026-09-13 23:20:02"
+  },
+  "CN(C)C=O": {
+    "name": "DMF",
+    "cid": 6228,
+    "h_codes": [
+      "H226",
+      "H303",
+      "H312",
+      "H313",
+      "H315",
+      "H318",
+      "H319",
+      "H320",
+      "H331",
+      "H332",
+      "H341",
+      "H350",
+      "H360",
+      "H370",
+      "H371",
+      "H372"
+    ],
+    "statements": {
+      "H312": "Harmful in contact with skin",
+      "H319": "Causes serious eye irritation",
+      "H332": "Harmful if inhaled",
+      "H360": "D ***: May damage the unborn child",
+      "H226": "Flammable liquid and vapor",
+      "H315": "Causes skin irritation",
+      "H331": "Toxic if inhaled",
+      "H350": "May cause cancer",
+      "H370": "Causes damage to organs",
+      "H372": "Causes damage to organs through prolonged or repeated exposure",
+      "H320": "Causes eye irritation",
+      "H318": "Causes serious eye damage",
+      "H341": "Suspected of causing genetic defects",
+      "H371": "May cause damage to organs",
+      "H303": "May be harmful if swallowed",
+      "H313": "May be harmful in contact with skin"
+    },
+    "signal": [
+      "Danger",
+      "Warning"
+    ],
+    "h_code_percent": {
+      "H226": 33.5,
+      "H312": 98.6,
+      "H319": 98.7,
+      "H332": 98.4,
+      "H360": 93.5
+    },
+    "fetched_at": "2026-09-13 23:20:06"
+  },
+  "CN1C=NC2=C1C(=O)N(C(=O)N2C)C": {
+    "name": "咖啡因",
+    "cid": 2519,
+    "h_codes": [
+      "H301",
+      "H302",
+      "H332",
+      "H360"
+    ],
+    "statements": {
+      "H302": "Harmful if swallowed",
+      "H301": "Toxic if swallowed",
+      "H332": "Harmful if inhaled",
+      "H360": "May damage fertility or the unborn child"
+    },
+    "signal": [
+      "Danger",
+      "Warning"
+    ],
+    "h_code_percent": {
+      "H302": 98.9
+    },
+    "fetched_at": "2026-09-13 23:20:09"
+  },
+  "O": {
+    "name": "水",
+    "cid": 962,
+    "h_codes": [
+      "H315",
+      "H319",
+      "H335"
+    ],
+    "statements": {
+      "H315": "Causes skin irritation",
+      "H319": "Causes serious eye irritation",
+      "H335": "May cause respiratory irritation"
+    },
+    "signal": [
+      "Warning"
+    ],
+    "h_code_percent": {
+      "H315": 100.0,
+      "H319": 100.0,
+      "H335": 100.0
+    },
+    "fetched_at": "2026-09-13 23:20:12"
+  },
+  "CCO": {
+    "name": "乙醇",
+    "cid": 702,
+    "h_codes": [
+      "H225",
+      "H315",
+      "H319",
+      "H320",
+      "H335",
+      "H336",
+      "H340",
+      "H350",
+      "H360",
+      "H372",
+      "H373",
+      "H412"
+    ],
+    "statements": {
+      "H225": "Highly Flammable liquid and vapor",
+      "H319": "Causes serious eye irritation",
+      "H412": "Harmful to aquatic life with long lasting effects",
+      "H315": "Causes skin irritation",
+      "H320": "Causes eye irritation",
+      "H335": "May cause respiratory irritation",
+      "H336": "May cause drowsiness or dizziness",
+      "H350": "May cause cancer",
+      "H360": "May damage fertility or the unborn child",
+      "H372": "Causes damage to organs through prolonged or repeated exposure",
+      "H373": "May causes damage to organs through prolonged or repeated exposure",
+      "H340": "May cause genetic defects"
+    },
+    "signal": [
+      "Danger",
+      "Warning"
+    ],
+    "h_code_percent": {
+      "H225": 99.9,
+      "H319": 100.0,
+      "H412": 100.0,
+      "H315": 100.0
+    },
+    "fetched_at": "2026-09-13 23:20:16"
+  },
+  "CO": {
+    "name": "甲醇",
+    "cid": 887,
+    "h_codes": [
+      "H225",
+      "H301",
+      "H302",
+      "H303",
+      "H311",
+      "H319",
+      "H331",
+      "H335",
+      "H336",
+      "H360",
+      "H370",
+      "H372"
+    ],
+    "statements": {
+      "H225": "Highly Flammable liquid and vapor",
+      "H301": "Toxic if swallowed",
+      "H311": "Toxic in contact with skin",
+      "H331": "Toxic if inhaled",
+      "H370": "**: Causes damage to organs",
+      "H302": "Harmful if swallowed",
+      "H319": "Causes serious eye irritation",
+      "H336": "May cause drowsiness or dizziness",
+      "H360": "May damage fertility or the unborn child",
+      "H372": "Causes damage to organs through prolonged or repeated exposure",
+      "H303": "May be harmful if swallowed",
+      "H335": "May cause respiratory irritation"
+    },
+    "signal": [
+      "Danger"
+    ],
+    "h_code_percent": {
+      "H225": 99.9,
+      "H301": 99.9,
+      "H311": 99.9,
+      "H331": 99.4,
+      "H370": 99.9
+    },
+    "fetched_at": "2026-09-13 23:20:19"
+  },
+  "CC(=O)O": {
+    "name": "乙酸",
+    "cid": 176,
+    "h_codes": [
+      "H226",
+      "H303",
+      "H312",
+      "H314",
+      "H318",
+      "H334",
+      "H370",
+      "H371"
+    ],
+    "statements": {
+      "H226": "Flammable liquid and vapor",
+      "H314": "Causes severe skin burns and eye damage",
+      "H318": "Causes serious eye damage",
+      "H312": "Harmful in contact with skin",
+      "H370": "Causes damage to organs",
+      "H303": "May be harmful if swallowed",
+      "H334": "May cause allergy or asthma symptoms or breathing difficulties if inhaled",
+      "H371": "May cause damage to organs"
+    },
+    "signal": [
+      "Danger"
+    ],
+    "h_code_percent": {
+      "H226": 99.7,
+      "H314": 99.9,
+      "H318": 14.7
+    },
+    "fetched_at": "2026-09-13 23:20:22"
+  },
+  "CI": {
+    "name": "碘甲烷",
+    "cid": 6328,
+    "h_codes": [
+      "H226",
+      "H301",
+      "H312",
+      "H315",
+      "H317",
+      "H318",
+      "H319",
+      "H330",
+      "H331",
+      "H334",
+      "H335",
+      "H336",
+      "H351",
+      "H361",
+      "H370",
+      "H372",
+      "H373",
+      "H400",
+      "H411"
+    ],
+    "statements": {
+      "H301": "Toxic if swallowed",
+      "H312": "Harmful in contact with skin",
+      "H315": "Causes skin irritation",
+      "H331": "Toxic if inhaled",
+      "H335": "May cause respiratory irritation",
+      "H351": "Suspected of causing cancer",
+      "H226": "Flammable liquid and vapor",
+      "H317": "May cause an allergic skin reaction",
+      "H319": "Causes serious eye irritation",
+      "H334": "May cause allergy or asthma symptoms or breathing difficulties if inhaled",
+      "H400": "Very toxic to aquatic life",
+      "H411": "Toxic to aquatic life with long lasting effects",
+      "H330": "Fatal if inhaled",
+      "H336": "May cause drowsiness or dizziness",
+      "H370": "Causes damage to organs",
+      "H372": "Causes damage to organs through prolonged or repeated exposure",
+      "H373": "May causes damage to organs through prolonged or repeated exposure",
+      "H318": "Causes serious eye damage",
+      "H361": "Suspected of damaging fertility or the unborn child"
+    },
+    "signal": [
+      "Danger"
+    ],
+    "h_code_percent": {
+      "H226": 42.8,
+      "H301": 99.6,
+      "H312": 99.6,
+      "H315": 99.6,
+      "H317": 14.8,
+      "H319": 39.8,
+      "H331": 99.6,
+      "H334": 14.8,
+      "H335": 99.6,
+      "H351": 96.2,
+      "H400": 42.8,
+      "H411": 42.8
+    },
+    "fetched_at": "2026-09-13 23:20:25"
+  },
+  "COC(=O)OC": {
+    "name": "碳酸二甲酯",
+    "cid": 12021,
+    "h_codes": [
+      "H225",
+      "H336",
+      "H361"
+    ],
+    "statements": {
+      "H225": "Highly Flammable liquid and vapor",
+      "H361": "Suspected of damaging fertility or the unborn child",
+      "H336": "May cause drowsiness or dizziness"
+    },
+    "signal": [
+      "Danger",
+      "Warning"
+    ],
+    "h_code_percent": {
+      "H225": 98.7
+    },
+    "fetched_at": "2026-09-13 23:20:28"
+  },
+  "NC(N)=O": {
+    "name": "尿素",
+    "cid": 1176,
+    "h_codes": [],
+    "statements": {},
+    "signal": [],
+    "h_code_percent": {},
+    "fetched_at": "2026-09-13 23:20:31"
+  },
+  "[OH-].[Na+]": {
+    "name": "氢氧化钠",
+    "cid": 14798,
+    "h_codes": [
+      "H290",
+      "H314",
+      "H315",
+      "H318",
+      "H319",
+      "H335",
+      "H370"
+    ],
+    "statements": {
+      "H314": "Causes severe skin burns and eye damage",
+      "H290": "May be corrosive to metals",
+      "H315": "Causes skin irritation",
+      "H318": "Causes serious eye damage",
+      "H319": "Causes serious eye irritation",
+      "H370": "Causes damage to organs",
+      "H335": "May cause respiratory irritation"
+    },
+    "signal": [
+      "Danger"
+    ],
+    "h_code_percent": {
+      "H290": 100.0,
+      "H314": 100.0,
+      "H315": 36.5,
+      "H318": 100.0,
+      "H319": 36.6
+    },
+    "fetched_at": "2026-09-13 23:20:34"
+  },
+  "N": {
+    "name": "氨",
+    "cid": 222,
+    "h_codes": [
+      "H220",
+      "H221",
+      "H280",
+      "H302",
+      "H314",
+      "H318",
+      "H331",
+      "H332",
+      "H334",
+      "H335",
+      "H341",
+      "H370",
+      "H372",
+      "H373",
+      "H400",
+      "H402",
+      "H410",
+      "H411"
+    ],
+    "statements": {
+      "H221": "Flammable gas",
+      "H314": "Causes severe skin burns and eye damage",
+      "H331": "Toxic if inhaled",
+      "H400": "Very toxic to aquatic life",
+      "H280": "Contains gas under pressure; may explode if heated",
+      "H332": "Harmful if inhaled",
+      "H335": "May cause respiratory irritation",
+      "H411": "Toxic to aquatic life with long lasting effects",
+      "H402": "Harmful to aquatic life",
+      "H220": "Extremely flammable gas",
+      "H318": "Causes serious eye damage",
+      "H334": "May cause allergy or asthma symptoms or breathing difficulties if inhaled",
+      "H370": "Causes damage to organs",
+      "H372": "Causes damage to organs through prolonged or repeated exposure",
+      "H373": "May causes damage to organs through prolonged or repeated exposure",
+      "H341": "Suspected of causing genetic defects",
+      "H302": "Harmful if swallowed",
+      "H410": "Very toxic to aquatic life with long lasting effects"
+    },
+    "signal": [
+      "Danger"
+    ],
+    "h_code_percent": {
+      "H221": 87.8,
+      "H280": 30.7,
+      "H314": 99.9,
+      "H331": 87.7,
+      "H332": 11.5,
+      "H335": 11.7,
+      "H400": 99.9,
+      "H411": 30.4
+    },
+    "fetched_at": "2026-09-13 23:20:38"
+  },
+  "OO": {
+    "name": "过氧化氢",
+    "cid": 784,
+    "h_codes": [
+      "H271",
+      "H302",
+      "H311",
+      "H313",
+      "H314",
+      "H318",
+      "H330",
+      "H331",
+      "H332",
+      "H335",
+      "H351",
+      "H361",
+      "H370",
+      "H372",
+      "H373",
+      "H400",
+      "H402",
+      "H412"
+    ],
+    "statements": {
+      "H271": "May cause fire or explosion; strong Oxidizer",
+      "H302": "Harmful if swallowed",
+      "H314": "Causes severe skin burns and eye damage",
+      "H332": "Harmful if inhaled",
+      "H318": "Causes serious eye damage",
+      "H335": "May cause respiratory irritation",
+      "H412": "Harmful to aquatic life with long lasting effects",
+      "H351": "Suspected of causing cancer",
+      "H370": "Causes damage to organs",
+      "H372": "Causes damage to organs through prolonged or repeated exposure",
+      "H311": "Toxic in contact with skin",
+      "H330": "Fatal if inhaled",
+      "H331": "Toxic if inhaled",
+      "H400": "Very toxic to aquatic life",
+      "H313": "May be harmful in contact with skin",
+      "H361": "Suspected of damaging fertility or the unborn child",
+      "H373": "May causes damage to organs through prolonged or repeated exposure",
+      "H402": "Harmful to aquatic life"
+    },
+    "signal": [
+      "Danger"
+    ],
+    "h_code_percent": {
+      "H271": 90.4,
+      "H302": 97.8,
+      "H314": 99.6,
+      "H318": 36.9,
+      "H332": 93.9,
+      "H335": 27.2,
+      "H412": 18.5
+    },
+    "fetched_at": "2026-09-13 23:20:42"
+  },
+  "O=S(Cl)Cl": {
+    "name": "二氯亚砜",
+    "cid": 24386,
+    "h_codes": [
+      "H301",
+      "H302",
+      "H314",
+      "H315",
+      "H318",
+      "H319",
+      "H330",
+      "H331",
+      "H332",
+      "H334",
+      "H335",
+      "H370"
+    ],
+    "statements": {
+      "H302": "Harmful if swallowed",
+      "H314": "Causes severe skin burns and eye damage",
+      "H332": "Harmful if inhaled",
+      "H318": "Causes serious eye damage",
+      "H331": "Toxic if inhaled",
+      "H335": "May cause respiratory irritation",
+      "H315": "Causes skin irritation",
+      "H319": "Causes serious eye irritation",
+      "H334": "May cause allergy or asthma symptoms or breathing difficulties if inhaled",
+      "H301": "Toxic if swallowed",
+      "H330": "Fatal if inhaled",
+      "H370": "Causes damage to organs"
+    },
+    "signal": [
+      "Danger"
+    ],
+    "h_code_percent": {
+      "H302": 85.1,
+      "H314": 100.0,
+      "H318": 29.4,
+      "H331": 45.7,
+      "H332": 100.0,
+      "H335": 100.0,
+      "H315": 100.0,
+      "H319": 100.0,
+      "H334": 100.0
+    },
+    "fetched_at": "2026-09-13 23:20:45"
+  },
+  "c1ccncc1": {
+    "name": "吡啶",
+    "cid": 1049,
+    "h_codes": [
+      "H225",
+      "H302",
+      "H304",
+      "H311",
+      "H312",
+      "H314",
+      "H315",
+      "H318",
+      "H319",
+      "H332",
+      "H335",
+      "H336",
+      "H351",
+      "H361",
+      "H370",
+      "H372",
+      "H373",
+      "H400",
+      "H410"
+    ],
+    "statements": {
+      "H225": "Highly Flammable liquid and vapor",
+      "H302": "Harmful if swallowed",
+      "H312": "Harmful in contact with skin",
+      "H332": "Harmful if inhaled",
+      "H315": "Causes skin irritation",
+      "H319": "Causes serious eye irritation",
+      "H304": "May be fatal if swallowed and enters airways",
+      "H314": "Causes severe skin burns and eye damage",
+      "H318": "Causes serious eye damage",
+      "H335": "May cause respiratory irritation",
+      "H336": "May cause drowsiness or dizziness",
+      "H351": "Suspected of causing cancer",
+      "H361": "Suspected of damaging fertility or the unborn child",
+      "H370": "Causes damage to organs",
+      "H372": "Causes damage to organs through prolonged or repeated exposure",
+      "H400": "Very toxic to aquatic life",
+      "H410": "Very toxic to aquatic life with long lasting effects",
+      "H311": "Toxic in contact with skin",
+      "H373": "May causes damage to organs through prolonged or repeated exposure"
+    },
+    "signal": [
+      "Danger",
+      "Warning"
+    ],
+    "h_code_percent": {
+      "H225": 99.8,
+      "H302": 99.7,
+      "H312": 99.7,
+      "H315": 17.5,
+      "H319": 16.5,
+      "H332": 99.8
+    },
+    "fetched_at": "2026-09-13 23:20:49"
+  },
+  "ClCCl": {
+    "name": "二氯甲烷",
+    "cid": 6344,
+    "h_codes": [
+      "H302",
+      "H315",
+      "H319",
+      "H332",
+      "H335",
+      "H336",
+      "H341",
+      "H350",
+      "H351",
+      "H361",
+      "H370",
+      "H372",
+      "H373",
+      "H402",
+      "H412"
+    ],
+    "statements": {
+      "H351": "Suspected of causing cancer",
+      "H302": "Harmful if swallowed",
+      "H315": "Causes skin irritation",
+      "H319": "Causes serious eye irritation",
+      "H336": "May cause drowsiness or dizziness",
+      "H341": "Suspected of causing genetic defects",
+      "H373": "May causes damage to organs through prolonged or repeated exposure",
+      "H332": "Harmful if inhaled",
+      "H350": "May cause cancer",
+      "H361": "Suspected of damaging fertility or the unborn child",
+      "H370": "Causes damage to organs",
+      "H372": "Causes damage to organs through prolonged or repeated exposure",
+      "H402": "Harmful to aquatic life",
+      "H412": "Harmful to aquatic life with long lasting effects",
+      "H335": "May cause respiratory irritation"
+    },
+    "signal": [
+      "Danger",
+      "Warning"
+    ],
+    "h_code_percent": {
+      "H302": 24.1,
+      "H315": 30.4,
+      "H319": 53.2,
+      "H336": 29.9,
+      "H341": 22.9,
+      "H351": 99.8,
+      "H373": 12.7
+    },
+    "fetched_at": "2026-09-13 23:20:52"
+  },
+  "Cc1ccccc1": {
+    "name": "甲苯",
+    "cid": 1140,
+    "h_codes": [
+      "H225",
+      "H303",
+      "H304",
+      "H315",
+      "H320",
+      "H332",
+      "H335",
+      "H336",
+      "H360",
+      "H361",
+      "H362",
+      "H370",
+      "H372",
+      "H373",
+      "H401",
+      "H412"
+    ],
+    "statements": {
+      "H225": "Highly Flammable liquid and vapor",
+      "H304": "May be fatal if swallowed and enters airways",
+      "H315": "Causes skin irritation",
+      "H336": "May cause drowsiness or dizziness",
+      "H361": "d ***: Suspected of damaging the unborn child",
+      "H373": "**: May causes damage to organs through prolonged or repeated exposure",
+      "H412": "Harmful to aquatic life with long lasting effects",
+      "H320": "Causes eye irritation",
+      "H332": "Harmful if inhaled",
+      "H335": "May cause respiratory irritation",
+      "H360": "May damage fertility or the unborn child",
+      "H362": "May cause harm to breast-fed children",
+      "H370": "Causes damage to organs",
+      "H372": "Causes damage to organs through prolonged or repeated exposure",
+      "H401": "Toxic to aquatic life",
+      "H303": "May be harmful if swallowed"
+    },
+    "signal": [
+      "Danger"
+    ],
+    "h_code_percent": {
+      "H225": 100.0,
+      "H304": 100.0,
+      "H315": 100.0,
+      "H336": 100.0,
+      "H361": 100.0,
+      "H373": 100.0,
+      "H412": 16.5
+    },
+    "fetched_at": "2026-09-13 23:20:55"
+  },
+  "[N-]=[N+]=[N-].[Na+]": {
+    "name": "叠氮化钠",
+    "cid": 33557,
+    "h_codes": [
+      "H300",
+      "H310",
+      "H314",
+      "H318",
+      "H370",
+      "H372",
+      "H373",
+      "H400",
+      "H410"
+    ],
+    "statements": {
+      "H300": "Fatal if swallowed",
+      "H400": "Very toxic to aquatic life",
+      "H410": "Very toxic to aquatic life with long lasting effects",
+      "H310": "Fatal in contact with skin",
+      "H373": "May causes damage to organs through prolonged or repeated exposure",
+      "H314": "Causes severe skin burns and eye damage",
+      "H318": "Causes serious eye damage",
+      "H370": "Causes damage to organs",
+      "H372": "Causes damage to organs through prolonged or repeated exposure"
+    },
+    "signal": [
+      "Danger"
+    ],
+    "h_code_percent": {
+      "H300": 99.5,
+      "H310": 41.7,
+      "H373": 23.2,
+      "H400": 96.3,
+      "H410": 99.5
+    },
+    "fetched_at": "2026-09-13 23:20:59"
+  },
+  "NN": {
+    "name": "肼",
+    "cid": 9321,
+    "h_codes": [
+      "H226",
+      "H301",
+      "H310",
+      "H311",
+      "H314",
+      "H317",
+      "H318",
+      "H330",
+      "H331",
+      "H335",
+      "H336",
+      "H341",
+      "H350",
+      "H351",
+      "H361",
+      "H370",
+      "H372",
+      "H400",
+      "H410"
+    ],
+    "statements": {
+      "H226": "Flammable liquid and vapor",
+      "H301": "Toxic if swallowed",
+      "H311": "Toxic in contact with skin",
+      "H314": "Causes severe skin burns and eye damage",
+      "H317": "May cause an allergic skin reaction",
+      "H331": "Toxic if inhaled",
+      "H350": "May cause cancer",
+      "H400": "Very toxic to aquatic life",
+      "H410": "Very toxic to aquatic life with long lasting effects",
+      "H310": "Fatal in contact with skin",
+      "H318": "Causes serious eye damage",
+      "H330": "Fatal if inhaled",
+      "H335": "May cause respiratory irritation",
+      "H336": "May cause drowsiness or dizziness",
+      "H341": "Suspected of causing genetic defects",
+      "H361": "Suspected of damaging fertility or the unborn child",
+      "H370": "Causes damage to organs",
+      "H372": "Causes damage to organs through prolonged or repeated exposure",
+      "H351": "Suspected of causing cancer"
+    },
+    "signal": [
+      "Danger"
+    ],
+    "h_code_percent": {
+      "H226": 99.9,
+      "H301": 100.0,
+      "H310": 16.5,
+      "H311": 83.5,
+      "H314": 100.0,
+      "H317": 100.0,
+      "H318": 57.6,
+      "H330": 66.3,
+      "H331": 33.7,
+      "H350": 100.0,
+      "H400": 99.9,
+      "H410": 100.0
+    },
+    "fetched_at": "2026-09-13 23:21:03"
+  },
+  "CCN(CC)CC": {
+    "name": "三乙胺",
+    "cid": 8471,
+    "h_codes": [
+      "H225",
+      "H301",
+      "H302",
+      "H311",
+      "H312",
+      "H314",
+      "H318",
+      "H331",
+      "H332",
+      "H335",
+      "H370",
+      "H372",
+      "H373",
+      "H401",
+      "H412"
+    ],
+    "statements": {
+      "H225": "Highly Flammable liquid and vapor",
+      "H301": "Toxic if swallowed",
+      "H311": "Toxic in contact with skin",
+      "H314": "Causes severe skin burns and eye damage",
+      "H318": "Causes serious eye damage",
+      "H331": "Toxic if inhaled",
+      "H302": "Harmful if swallowed",
+      "H312": "Harmful in contact with skin",
+      "H332": "Harmful if inhaled",
+      "H335": "May cause respiratory irritation",
+      "H370": "Causes damage to organs",
+      "H373": "May causes damage to organs through prolonged or repeated exposure",
+      "H401": "Toxic to aquatic life",
+      "H412": "Harmful to aquatic life with long lasting effects",
+      "H372": "Causes damage to organs through prolonged or repeated exposure"
+    },
+    "signal": [
+      "Danger"
+    ],
+    "h_code_percent": {
+      "H225": 99.9,
+      "H302": 97.5,
+      "H311": 47.5,
+      "H312": 52.5,
+      "H314": 99.9,
+      "H318": 45.2,
+      "H331": 46.5,
+      "H332": 52.6,
+      "H335": 47.4
+    },
+    "fetched_at": "2026-09-13 23:21:07"
+  },
+  "[BH4-].[Na+]": {
+    "name": "硼氢化钠",
+    "cid": 4311764,
+    "h_codes": [
+      "H260",
+      "H301",
+      "H311",
+      "H314",
+      "H318",
+      "H332",
+      "H335",
+      "H360"
+    ],
+    "statements": {
+      "H260": "In contact with water releases flammable gases which may ignite spontaneously",
+      "H301": "Toxic if swallowed",
+      "H311": "Toxic in contact with skin",
+      "H314": "Causes severe skin burns and eye damage",
+      "H318": "Causes serious eye damage",
+      "H332": "Harmful if inhaled",
+      "H360": "May damage fertility or the unborn child",
+      "H335": "May cause respiratory irritation"
+    },
+    "signal": [
+      "Danger"
+    ],
+    "h_code_percent": {
+      "H260": 86.7,
+      "H301": 99.6,
+      "H311": 23.0,
+      "H314": 99.6,
+      "H318": 71.4,
+      "H332": 16.7,
+      "H360": 43.7
+    },
+    "fetched_at": "2026-09-13 23:21:10"
+  },
+  "OS(=O)(=O)O": {
+    "name": "硫酸",
+    "cid": 1118,
+    "h_codes": [
+      "H290",
+      "H303",
+      "H314",
+      "H318",
+      "H330",
+      "H370",
+      "H372",
+      "H402",
+      "H410"
+    ],
+    "statements": {
+      "H314": "Causes severe skin burns and eye damage",
+      "H290": "May be corrosive to metals",
+      "H318": "Causes serious eye damage",
+      "H330": "Fatal if inhaled",
+      "H370": "Causes damage to organs",
+      "H372": "Causes damage to organs through prolonged or repeated exposure",
+      "H402": "Harmful to aquatic life",
+      "H410": "Very toxic to aquatic life with long lasting effects",
+      "H303": "May be harmful if swallowed"
+    },
+    "signal": [
+      "Danger",
+      "Warning"
+    ],
+    "h_code_percent": {
+      "H314": 99.9
+    },
+    "fetched_at": "2026-09-13 23:21:13"
+  },
+  "Cl": {
+    "name": "盐酸",
+    "cid": 313,
+    "h_codes": [
+      "H280",
+      "H290",
+      "H301",
+      "H314",
+      "H318",
+      "H330",
+      "H331",
+      "H334",
+      "H335",
+      "H370",
+      "H372",
+      "H400"
+    ],
+    "statements": {
+      "H314": "Causes severe skin burns and eye damage",
+      "H331": "Toxic if inhaled",
+      "H280": "Contains gas under pressure; may explode if heated",
+      "H290": "May be corrosive to metals",
+      "H318": "Causes serious eye damage",
+      "H335": "May cause respiratory irritation",
+      "H400": "Very toxic to aquatic life",
+      "H301": "Toxic if swallowed",
+      "H330": "Fatal if inhaled",
+      "H334": "May cause allergy or asthma symptoms or breathing difficulties if inhaled",
+      "H370": "Causes damage to organs",
+      "H372": "Causes damage to organs through prolonged or repeated exposure"
+    },
+    "signal": [
+      "Danger",
+      "Warning"
+    ],
+    "h_code_percent": {
+      "H280": 24.3,
+      "H290": 22.8,
+      "H314": 99.9,
+      "H318": 20.0,
+      "H331": 49.4,
+      "H335": 59.0
+    },
+    "fetched_at": "2026-09-13 23:21:17"
+  },
+  "O=C([O-])[O-].[K+].[K+]": {
+    "name": "碳酸钾",
+    "cid": 11430,
+    "h_codes": [
+      "H302",
+      "H315",
+      "H318",
+      "H319",
+      "H335",
+      "H402",
+      "H412"
+    ],
+    "statements": {
+      "H302": "Harmful if swallowed",
+      "H315": "Causes skin irritation",
+      "H319": "Causes serious eye irritation",
+      "H335": "May cause respiratory irritation",
+      "H318": "Causes serious eye damage",
+      "H402": "Harmful to aquatic life",
+      "H412": "Harmful to aquatic life with long lasting effects"
+    },
+    "signal": [
+      "Danger",
+      "Warning"
+    ],
+    "h_code_percent": {
+      "H302": 15.4,
+      "H315": 45.0,
+      "H319": 97.7,
+      "H335": 42.3
+    },
+    "fetched_at": "2026-09-13 23:21:20"
+  },
+  "CC#N": {
+    "name": "乙腈",
+    "cid": 6342,
+    "h_codes": [
+      "H225",
+      "H302",
+      "H303",
+      "H311",
+      "H312",
+      "H318",
+      "H319",
+      "H332",
+      "H341",
+      "H370",
+      "H373"
+    ],
+    "statements": {
+      "H225": "Highly Flammable liquid and vapor",
+      "H302": "Harmful if swallowed",
+      "H312": "Harmful in contact with skin",
+      "H319": "Causes serious eye irritation",
+      "H332": "Harmful if inhaled",
+      "H311": "Toxic in contact with skin",
+      "H370": "Causes damage to organs",
+      "H373": "May causes damage to organs through prolonged or repeated exposure",
+      "H303": "May be harmful if swallowed",
+      "H341": "Suspected of causing genetic defects",
+      "H318": "Causes serious eye damage"
+    },
+    "signal": [
+      "Danger"
+    ],
+    "h_code_percent": {
+      "H225": 99.9,
+      "H302": 99.8,
+      "H312": 94.3,
+      "H319": 99.8,
+      "H332": 95.1
+    },
+    "fetched_at": "2026-09-13 23:21:24"
+  },
+  "C1CCOC1": {
+    "name": "四氢呋喃",
+    "cid": 8028,
+    "h_codes": [
+      "H225",
+      "H302",
+      "H315",
+      "H319",
+      "H332",
+      "H335",
+      "H336",
+      "H351",
+      "H361",
+      "H370",
+      "H371",
+      "H372"
+    ],
+    "statements": {
+      "H225": "Highly Flammable liquid and vapor",
+      "H319": "Causes serious eye irritation",
+      "H335": "May cause respiratory irritation",
+      "H351": "Suspected of causing cancer",
+      "H302": "Harmful if swallowed",
+      "H336": "May cause drowsiness or dizziness",
+      "H315": "Causes skin irritation",
+      "H332": "Harmful if inhaled",
+      "H361": "Suspected of damaging fertility or the unborn child",
+      "H370": "Causes damage to organs",
+      "H372": "Causes damage to organs through prolonged or repeated exposure",
+      "H371": "May cause damage to organs"
+    },
+    "signal": [
+      "Danger",
+      "Warning"
+    ],
+    "h_code_percent": {
+      "H225": 99.8,
+      "H302": 31.6,
+      "H319": 99.3,
+      "H335": 98.7,
+      "H336": 23.2,
+      "H351": 51.5
+    },
+    "fetched_at": "2026-09-13 23:21:27"
+  },
+  "COC(OC)N(C)C": {
+    "name": "二甲基甲酰胺二甲缩醛",
+    "cid": 78373,
+    "h_codes": [
+      "H225",
+      "H302",
+      "H315",
+      "H317",
+      "H318",
+      "H319",
+      "H332",
+      "H335"
+    ],
+    "statements": {
+      "H225": "Highly Flammable liquid and vapor",
+      "H302": "Harmful if swallowed",
+      "H315": "Causes skin irritation",
+      "H317": "May cause an allergic skin reaction",
+      "H318": "Causes serious eye damage",
+      "H319": "Causes serious eye irritation",
+      "H332": "Harmful if inhaled",
+      "H335": "May cause respiratory irritation"
+    },
+    "signal": [
+      "Danger"
+    ],
+    "h_code_percent": {
+      "H225": 100.0,
+      "H302": 19.1,
+      "H315": 30.9,
+      "H317": 70.4,
+      "H318": 70.0,
+      "H319": 30.0,
+      "H332": 79.6,
+      "H335": 23.0
+    },
+    "fetched_at": "2026-09-13 23:21:31"
+  },
+  "CCOC(OCC)OCC": {
+    "cid": 31214,
+    "name": "diethoxymethoxyethane",
+    "h_codes": [
+      "H226",
+      "H319",
+      "H332"
+    ],
+    "statements": {
+      "H226": "Flammable liquid and vapor",
+      "H319": "Causes serious eye irritation",
+      "H332": "Harmful if inhaled"
+    },
+    "h_code_percent": {
+      "H226": 98.7,
+      "H319": 29.6
+    },
+    "signal": [
+      "Warning"
+    ]
+  },
+  "Cn1c(=O)[nH]c2ncn(C)c2c1=O": {
+    "cid": 4687,
+    "name": "1,7-dimethyl-3H-purine-2,6-dione",
+    "h_codes": [
+      "H302"
+    ],
+    "statements": {
+      "H302": "Harmful if swallowed"
+    },
+    "h_code_percent": {
+      "H302": 93.3
+    },
+    "signal": [
+      "Warning"
+    ]
+  },
+  "Cn1c(=O)c2c(nc(Cl)n2C)n(C)c1=O": {
+    "cid": 21031,
+    "name": "8-chloro-1,3,7-trimethylpurine-2,6-dione",
+    "h_codes": [
+      "H302"
+    ],
+    "statements": {
+      "H302": "Harmful if swallowed"
+    },
+    "h_code_percent": {
+      "H302": 100.0
+    },
+    "signal": [
+      "Warning"
+    ]
+  },
+  "CSc1nc2c(c(=O)n(C)c(=O)n2C)n1C": {
+    "cid": 94929,
+    "name": "1,3,7-trimethyl-8-methylsulfanylpurine-2,6-dione",
+    "h_codes": [],
+    "statements": {},
+    "h_code_percent": {},
+    "signal": []
+  },
+  "Cn1c(=O)c2c(nc(S)n2C)n(C)c1=O": {
+    "cid": 764318,
+    "name": "1,3,7-trimethyl-8-sulfanylidene-9H-purine-2,6-dione",
+    "h_codes": [],
+    "statements": {},
+    "h_code_percent": {},
+    "signal": []
+  },
+  "CCn1c(=O)n(C)c(=O)c2c1ncn2C": {
+    "cid": 343624,
+    "name": "3-ethyl-1,7-dimethylpurine-2,6-dione",
+    "h_codes": [],
+    "statements": {},
+    "h_code_percent": {},
+    "signal": []
+  },
+  "CC(=O)Oc1ccccc1C(=O)OCc1ccccc1": {
+    "cid": 334306,
+    "name": "benzyl 2-acetyloxybenzoate",
+    "h_codes": [],
+    "statements": {},
+    "h_code_percent": {},
+    "signal": []
+  },
+  "O=C(O)c1ccccc1O": {
+    "cid": 338,
+    "name": "2-hydroxybenzoic acid",
+    "h_codes": [
+      "H302",
+      "H312",
+      "H315",
+      "H317",
+      "H318",
+      "H319",
+      "H361",
+      "H370",
+      "H372",
+      "H402"
+    ],
+    "statements": {
+      "H302": "Harmful if swallowed",
+      "H318": "Causes serious eye damage",
+      "H361": "d: Suspected of damaging the unborn child",
+      "H312": "Harmful in contact with skin",
+      "H319": "Causes serious eye irritation",
+      "H315": "Causes skin irritation",
+      "H317": "May cause an allergic skin reaction",
+      "H370": "Causes damage to organs",
+      "H372": "Causes damage to organs through prolonged or repeated exposure",
+      "H402": "Harmful to aquatic life"
+    },
+    "h_code_percent": {
+      "H302": 98.0,
+      "H312": 45.5,
+      "H318": 50.1,
+      "H319": 49.7
+    },
+    "signal": [
+      "Danger"
+    ]
+  },
+  "O=C(O)c1ccccc1F": {
+    "cid": 9935,
+    "name": "2-fluorobenzoic acid",
+    "h_codes": [
+      "H315",
+      "H319",
+      "H335"
+    ],
+    "statements": {
+      "H315": "Causes skin irritation",
+      "H319": "Causes serious eye irritation",
+      "H335": "May cause respiratory irritation"
+    },
+    "h_code_percent": {
+      "H315": 100.0,
+      "H319": 23.1,
+      "H335": 96.2
+    },
+    "signal": [
+      "Warning"
+    ]
+  },
+  "CC(=O)OCc1c2ccccc2c(COC(C)=O)c2ccccc12": {
+    "cid": 613145,
+    "name": "[10-(acetyloxymethyl)anthracen-9-yl]methyl acetate",
+    "h_codes": [
+      "H400",
+      "H410"
+    ],
+    "statements": {
+      "H400": "Very toxic to aquatic life",
+      "H410": "Very toxic to aquatic life with long lasting effects"
+    },
+    "h_code_percent": {
+      "H400": 100.0,
+      "H410": 100.0
+    },
+    "signal": [
+      "Warning"
+    ]
+  },
+  "ClC(Cl)(Cl)Cl": {
+    "cid": 5943,
+    "name": "tetrachloromethane",
+    "h_codes": [
+      "H301",
+      "H303",
+      "H311",
+      "H315",
+      "H317",
+      "H319",
+      "H331",
+      "H332",
+      "H350",
+      "H351",
+      "H360",
+      "H361",
+      "H370",
+      "H372",
+      "H373",
+      "H400",
+      "H402",
+      "H411",
+      "H412",
+      "H420"
+    ],
+    "statements": {
+      "H301": "Toxic if swallowed",
+      "H311": "Toxic in contact with skin",
+      "H331": "Toxic if inhaled",
+      "H351": "Suspected of causing cancer",
+      "H372": "**: Causes damage to organs through prolonged or repeated exposure",
+      "H412": "Harmful to aquatic life with long lasting effects",
+      "H420": "Harms public health and the environment by destroying ozone in the upper atmosphere",
+      "H317": "May cause an allergic skin reaction",
+      "H332": "Harmful if inhaled",
+      "H350": "May cause cancer",
+      "H360": "May damage fertility or the unborn child",
+      "H370": "Causes damage to organs",
+      "H400": "Very toxic to aquatic life",
+      "H411": "Toxic to aquatic life with long lasting effects",
+      "H315": "Causes skin irritation",
+      "H319": "Causes serious eye irritation",
+      "H361": "Suspected of damaging fertility or the unborn child",
+      "H373": "May causes damage to organs through prolonged or repeated exposure",
+      "H303": "May be harmful if swallowed",
+      "H402": "Harmful to aquatic life"
+    },
+    "h_code_percent": {
+      "H301": 100.0,
+      "H311": 100.0,
+      "H317": 51.4,
+      "H331": 100.0,
+      "H351": 100.0,
+      "H372": 98.3,
+      "H412": 95.3,
+      "H420": 82.7
+    },
+    "signal": [
+      "Danger"
+    ]
+  },
+  "CC(=O)Oc1ccccc1C=O": {
+    "cid": 237228,
+    "name": "(2-formylphenyl) acetate",
+    "h_codes": [
+      "H302",
+      "H315",
+      "H317",
+      "H319",
+      "H335"
+    ],
+    "statements": {
+      "H302": "Harmful if swallowed",
+      "H315": "Causes skin irritation",
+      "H317": "May cause an allergic skin reaction",
+      "H319": "Causes serious eye irritation",
+      "H335": "May cause respiratory irritation"
+    },
+    "h_code_percent": {
+      "H302": 50.0,
+      "H315": 50.0,
+      "H317": 50.0,
+      "H319": 50.0,
+      "H335": 50.0
+    },
+    "signal": [
+      "Warning"
+    ]
+  },
+  "CCOP(=O)(O)OCC": {
+    "cid": 654,
+    "name": "diethyl hydrogen phosphate",
+    "h_codes": [
+      "H315",
+      "H319",
+      "H335"
+    ],
+    "statements": {
+      "H315": "Causes skin irritation",
+      "H319": "Causes serious eye irritation",
+      "H335": "May cause respiratory irritation"
+    },
+    "h_code_percent": {
+      "H315": 56.0,
+      "H319": 56.0,
+      "H335": 50.0
+    },
+    "signal": [
+      "Warning"
+    ]
+  },
+  "COP(=O)(O)OC": {
+    "cid": 13134,
+    "name": "dimethyl hydrogen phosphate",
+    "h_codes": [
+      "H302",
+      "H312",
+      "H314",
+      "H317",
+      "H318"
+    ],
+    "statements": {
+      "H302": "+H312 (97.9%): Harmful if swallowed or in contact with skin",
+      "H312": "Harmful in contact with skin",
+      "H314": "Causes severe skin burns and eye damage",
+      "H317": "May cause an allergic skin reaction",
+      "H318": "Causes serious eye damage"
+    },
+    "h_code_percent": {
+      "H302": 97.9,
+      "H312": 97.9,
+      "H314": 99.3,
+      "H317": 97.9,
+      "H318": 72.6
+    },
+    "signal": [
+      "Danger"
+    ]
+  },
+  "O=P(O)(OCc1ccccc1)OCc1ccccc1": {
+    "cid": 74189,
+    "name": "dibenzyl hydrogen phosphate",
+    "h_codes": [
+      "H315",
+      "H318",
+      "H319",
+      "H335"
+    ],
+    "statements": {
+      "H315": "Causes skin irritation",
+      "H318": "Causes serious eye damage",
+      "H319": "Causes serious eye irritation",
+      "H335": "May cause respiratory irritation"
+    },
+    "h_code_percent": {
+      "H315": 60.0,
+      "H318": 20.0,
+      "H319": 60.0,
+      "H335": 40.0
+    },
+    "signal": [
+      "Danger"
+    ]
+  },
+  "CC(C)(C)OC(=O)c1ccccc1O": {
+    "cid": 11424104,
+    "name": "tert-butyl 2-hydroxybenzoate",
+    "h_codes": [
+      "H302",
+      "H315",
+      "H319",
+      "H335"
+    ],
+    "statements": {
+      "H302": "Harmful if swallowed",
+      "H315": "Causes skin irritation",
+      "H319": "Causes serious eye irritation",
+      "H335": "May cause respiratory irritation"
+    },
+    "h_code_percent": {
+      "H302": 100.0,
+      "H315": 100.0,
+      "H319": 100.0,
+      "H335": 100.0
+    },
+    "signal": [
+      "Warning"
+    ]
+  },
+  "CC(C)=O": {
+    "cid": 180,
+    "name": "propan-2-one",
+    "h_codes": [
+      "H225",
+      "H305",
+      "H319",
+      "H320",
+      "H335",
+      "H336",
+      "H361",
+      "H372",
+      "H373"
+    ],
+    "statements": {
+      "H225": "Highly Flammable liquid and vapor",
+      "H319": "Causes serious eye irritation",
+      "H336": "May cause drowsiness or dizziness",
+      "H320": "Causes eye irritation",
+      "H335": "May cause respiratory irritation",
+      "H361": "Suspected of damaging fertility or the unborn child",
+      "H372": "Causes damage to organs through prolonged or repeated exposure",
+      "H305": "May be harmful if swallowed and enters airways",
+      "H373": "May causes damage to organs through prolonged or repeated exposure"
+    },
+    "h_code_percent": {
+      "H225": 99.9,
+      "H319": 99.9,
+      "H336": 98.7
+    },
+    "signal": [
+      "Danger"
+    ]
+  },
+  "CC(C)Cc1ccc(C(C)CO)cc1": {
+    "cid": 595160,
+    "name": "2-[4-(2-methylpropyl)phenyl]propan-1-ol",
+    "h_codes": [
+      "H302"
+    ],
+    "statements": {
+      "H302": "Harmful if swallowed"
+    },
+    "h_code_percent": {
+      "H302": 100.0
+    },
+    "signal": [
+      "Warning"
+    ]
+  },
+  "[O-][I+3]([O-])([O-])O": {
+    "cid": null,
+    "name": "",
+    "h_codes": [],
+    "statements": {},
+    "h_code_percent": {},
+    "signal": []
+  },
+  "CCOC(=O)C(C)c1ccc(C=C(C)C)cc1": {
+    "cid": 13241451,
+    "name": "ethyl 2-[4-(2-methylprop-1-enyl)phenyl]propanoate",
+    "h_codes": [],
+    "statements": {},
+    "h_code_percent": {},
+    "signal": []
+  },
+  "C=C(C)Cc1ccc(C(C)C(=O)OC)cc1": {
+    "cid": 0,
+    "name": "",
+    "h_codes": [],
+    "statements": {},
+    "h_code_percent": {},
+    "signal": []
+  },
+  "CC(C)Cc1ccc(C(C)C(=O)OCc2ccccc2)c(O)c1": {
+    "cid": 0,
+    "name": "",
+    "h_codes": [],
+    "statements": {},
+    "h_code_percent": {},
+    "signal": []
+  },
+  "CC(C)Cc1ccc(C(C)C(=O)OCc2ccccc2)cc1O": {
+    "cid": 0,
+    "name": "",
+    "h_codes": [],
+    "statements": {},
+    "h_code_percent": {},
+    "signal": []
+  },
+  "CC(C)(C)O": {
+    "cid": 6386,
+    "name": "2-methylpropan-2-ol",
+    "h_codes": [
+      "H225",
+      "H228",
+      "H303",
+      "H316",
+      "H318",
+      "H319",
+      "H332",
+      "H335",
+      "H336",
+      "H351",
+      "H361",
+      "H371"
+    ],
+    "statements": {
+      "H225": "Highly Flammable liquid and vapor",
+      "H319": "Causes serious eye irritation",
+      "H332": "Harmful if inhaled",
+      "H335": "May cause respiratory irritation",
+      "H351": "Suspected of causing cancer",
+      "H228": "Flammable solid",
+      "H336": "May cause drowsiness or dizziness",
+      "H361": "Suspected of damaging fertility or the unborn child",
+      "H303": "May be harmful if swallowed",
+      "H316": "Causes mild skin irritation",
+      "H371": "May cause damage to organs",
+      "H318": "Causes serious eye damage"
+    },
+    "h_code_percent": {
+      "H225": 99.9,
+      "H319": 99.8,
+      "H332": 99.9,
+      "H335": 99.6
+    },
+    "signal": [
+      "Danger",
+      "Warning"
+    ]
+  },
+  "COc1ccc(NC(C)=O)cc1": {
+    "cid": 5827,
+    "name": "N-(4-methoxyphenyl)acetamide",
+    "h_codes": [
+      "H302"
+    ],
+    "statements": {
+      "H302": "Harmful if swallowed"
+    },
+    "h_code_percent": {
+      "H302": 100.0
+    },
+    "signal": [
+      "Warning"
+    ]
+  },
+  "CC(=O)Nc1ccc(OC(C)=O)cc1": {
+    "cid": 17499,
+    "name": "(4-acetamidophenyl) acetate",
+    "h_codes": [
+      "H302",
+      "H315",
+      "H319"
+    ],
+    "statements": {
+      "H302": "Harmful if swallowed",
+      "H315": "Causes skin irritation",
+      "H319": "Causes serious eye irritation"
+    },
+    "h_code_percent": {
+      "H302": 20.0,
+      "H315": 20.0,
+      "H319": 40.0
+    },
+    "signal": [
+      "Warning"
+    ]
+  },
+  "CC(=O)Nc1ccc(OCc2ccccc2)cc1": {
+    "cid": 142561,
+    "name": "N-(4-phenylmethoxyphenyl)acetamide",
+    "h_codes": [],
+    "statements": {},
+    "h_code_percent": {},
+    "signal": []
+  },
+  "O=[N+]([O-])c1ccc(O)cc1": {
+    "cid": 980,
+    "name": "4-nitrophenol",
+    "h_codes": [
+      "H301",
+      "H302",
+      "H312",
+      "H314",
+      "H315",
+      "H317",
+      "H318",
+      "H332",
+      "H336",
+      "H370",
+      "H372",
+      "H373",
+      "H401",
+      "H411",
+      "H412"
+    ],
+    "statements": {
+      "H302": "Harmful if swallowed",
+      "H312": "Harmful in contact with skin",
+      "H332": "Harmful if inhaled",
+      "H373": "**: May causes damage to organs through prolonged or repeated exposure",
+      "H301": "Toxic if swallowed",
+      "H412": "Harmful to aquatic life with long lasting effects",
+      "H318": "Causes serious eye damage",
+      "H336": "May cause drowsiness or dizziness",
+      "H370": "Causes damage to organs",
+      "H372": "Causes damage to organs through prolonged or repeated exposure",
+      "H401": "Toxic to aquatic life",
+      "H411": "Toxic to aquatic life with long lasting effects",
+      "H314": "Causes severe skin burns and eye damage",
+      "H317": "May cause an allergic skin reaction",
+      "H315": "Causes skin irritation"
+    },
+    "h_code_percent": {
+      "H301": 77.6,
+      "H302": 22.4,
+      "H312": 99.6,
+      "H332": 99.6,
+      "H373": 99.2,
+      "H412": 42.3
+    },
+    "signal": [
+      "Danger",
+      "Warning"
+    ]
+  },
+  "Nc1ccc(O)cc1": {
+    "cid": 403,
+    "name": "4-aminophenol",
+    "h_codes": [
+      "H302",
+      "H316",
+      "H317",
+      "H320",
+      "H332",
+      "H334",
+      "H341",
+      "H361",
+      "H370",
+      "H372",
+      "H373",
+      "H400",
+      "H410"
+    ],
+    "statements": {
+      "H302": "Harmful if swallowed",
+      "H332": "Harmful if inhaled",
+      "H341": "Suspected of causing genetic defects",
+      "H400": "Very toxic to aquatic life",
+      "H410": "Very toxic to aquatic life with long lasting effects",
+      "H317": "May cause an allergic skin reaction",
+      "H373": "May causes damage to organs through prolonged or repeated exposure",
+      "H320": "Causes eye irritation",
+      "H334": "May cause allergy or asthma symptoms or breathing difficulties if inhaled",
+      "H361": "Suspected of damaging fertility or the unborn child",
+      "H316": "Causes mild skin irritation",
+      "H370": "Causes damage to organs",
+      "H372": "Causes damage to organs through prolonged or repeated exposure"
+    },
+    "h_code_percent": {
+      "H302": 100.0,
+      "H317": 34.3,
+      "H332": 99.5,
+      "H341": 100.0,
+      "H373": 34.3,
+      "H400": 98.6,
+      "H410": 100.0
+    },
+    "signal": [
+      "Danger",
+      "Warning"
+    ]
+  },
+  "CC(=O)Nc1ccc(OC(C)(C)C)cc1": {
+    "cid": 16426,
+    "name": "N-[4-[(2-methylpropan-2-yl)oxy]phenyl]acetamide",
+    "h_codes": [],
+    "statements": {},
+    "h_code_percent": {},
+    "signal": []
+  },
+  "CC(N)=O": {
+    "cid": 178,
+    "name": "acetamide",
+    "h_codes": [
+      "H316",
+      "H320",
+      "H351",
+      "H361"
+    ],
+    "statements": {
+      "H351": "Suspected of causing cancer",
+      "H361": "Suspected of damaging fertility or the unborn child",
+      "H320": "Causes eye irritation",
+      "H316": "Causes mild skin irritation"
+    },
+    "h_code_percent": {
+      "H351": 100.0
+    },
+    "signal": [
+      "Warning"
+    ]
+  },
+  "Oc1ccc(Br)cc1": {
+    "cid": 7808,
+    "name": "4-bromophenol",
+    "h_codes": [
+      "H302",
+      "H312",
+      "H315",
+      "H319",
+      "H335",
+      "H361",
+      "H401",
+      "H411"
+    ],
+    "statements": {
+      "H302": "Harmful if swallowed",
+      "H312": "Harmful in contact with skin",
+      "H315": "Causes skin irritation",
+      "H319": "Causes serious eye irritation",
+      "H335": "May cause respiratory irritation",
+      "H401": "Toxic to aquatic life",
+      "H411": "Toxic to aquatic life with long lasting effects",
+      "H361": "Suspected of damaging fertility or the unborn child"
+    },
+    "h_code_percent": {
+      "H302": 91.8,
+      "H312": 13.1,
+      "H315": 95.1,
+      "H319": 86.9,
+      "H335": 85.2
+    },
+    "signal": [
+      "Warning"
+    ]
+  },
+  "CC(=O)Nc1ccc(C=O)cc1": {
+    "cid": 73942,
+    "name": "N-(4-formylphenyl)acetamide",
+    "h_codes": [
+      "H302",
+      "H315",
+      "H319",
+      "H332",
+      "H335"
+    ],
+    "statements": {
+      "H302": "Harmful if swallowed",
+      "H315": "Causes skin irritation",
+      "H319": "Causes serious eye irritation",
+      "H332": "Harmful if inhaled",
+      "H335": "May cause respiratory irritation"
+    },
+    "h_code_percent": {
+      "H302": 75.0,
+      "H315": 100.0,
+      "H319": 100.0,
+      "H332": 75.0,
+      "H335": 100.0
+    },
+    "signal": [
+      "Warning"
+    ]
+  },
+  "CC(=O)n1ccnc1": {
+    "cid": 17174,
+    "name": "1-imidazol-1-ylethanone",
+    "h_codes": [
+      "H315",
+      "H319",
+      "H335"
+    ],
+    "statements": {
+      "H315": "Causes skin irritation",
+      "H319": "Causes serious eye irritation",
+      "H335": "May cause respiratory irritation"
+    },
+    "h_code_percent": {
+      "H315": 100.0,
+      "H319": 100.0,
+      "H335": 100.0
+    },
+    "signal": [
+      "Warning"
+    ]
+  },
+  "COC(=O)Oc1ccc(NC(C)=O)cc1": {
+    "cid": 28478,
+    "name": "(4-acetamidophenyl) methyl carbonate",
+    "h_codes": [],
+    "statements": {},
+    "h_code_percent": {},
+    "signal": []
+  },
+  "CC(=O)Nc1ccc(O)c(Br)c1": {
+    "cid": 225166,
+    "name": "N-(3-bromo-4-hydroxyphenyl)acetamide",
+    "h_codes": [],
+    "statements": {},
+    "h_code_percent": {},
+    "signal": []
+  },
+  "CN[C@@H](C)[C@H](O)c1ccccc1": {
+    "cid": 9294,
+    "name": "(1R,2S)-2-(methylamino)-1-phenylpropan-1-ol",
+    "h_codes": [
+      "H302",
+      "H314",
+      "H317",
+      "H318",
+      "H360",
+      "H362",
+      "H371",
+      "H373"
+    ],
+    "statements": {
+      "H302": "Harmful if swallowed",
+      "H314": "Causes severe skin burns and eye damage",
+      "H317": "May cause an allergic skin reaction",
+      "H318": "Causes serious eye damage",
+      "H360": "May damage fertility or the unborn child",
+      "H362": "May cause harm to breast-fed children",
+      "H371": "May cause damage to organs",
+      "H373": "May causes damage to organs through prolonged or repeated exposure"
+    },
+    "h_code_percent": {
+      "H302": 100.0,
+      "H314": 52.0,
+      "H317": 52.0,
+      "H318": 52.0
+    },
+    "signal": [
+      "Danger",
+      "Warning"
+    ]
+  },
+  "CCOC(=O)N[C@@H](C)Cc1ccccc1": {
+    "cid": 6612330,
+    "name": "ethyl N-[(2S)-1-phenylpropan-2-yl]carbamate",
+    "h_codes": [],
+    "statements": {},
+    "h_code_percent": {},
+    "signal": []
+  },
+  "C[C@@H](Cc1ccccc1)N(C)Cc1ccccc1": {
+    "cid": 5311017,
+    "name": "(2S)-N-benzyl-N-methyl-1-phenylpropan-2-amine",
+    "h_codes": [],
+    "statements": {},
+    "h_code_percent": {},
+    "signal": []
+  },
+  "COC(=O)N[C@@H](C)Cc1ccccc1": {
+    "cid": 89694537,
+    "name": "methyl N-[(2S)-1-phenylpropan-2-yl]carbamate",
+    "h_codes": [],
+    "statements": {},
+    "h_code_percent": {},
+    "signal": []
+  },
+  "CC(=O)N(C)[C@@H](C)Cc1ccccc1": {
+    "cid": 12850262,
+    "name": "N-methyl-N-[(2S)-1-phenylpropan-2-yl]acetamide",
+    "h_codes": [],
+    "statements": {},
+    "h_code_percent": {},
+    "signal": []
+  },
+  "CCOC(=O)N(C)[C@@H](C)Cc1ccccc1": {
+    "cid": 15287397,
+    "name": "ethyl N-methyl-N-[(2S)-1-phenylpropan-2-yl]carbamate",
+    "h_codes": [],
+    "statements": {},
+    "h_code_percent": {},
+    "signal": []
+  },
+  "CN[C@@H](C)Cc1cccc(Cl)c1": {
+    "cid": 42054296,
+    "name": "(2S)-1-(3-chlorophenyl)-N-methylpropan-2-amine",
+    "h_codes": [],
+    "statements": {},
+    "h_code_percent": {},
+    "signal": []
+  }
+}

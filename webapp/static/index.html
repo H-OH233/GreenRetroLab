@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GreenRetroLab · 绿色逆合成评估台</title>
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="mark">
+    <span class="mark-rule" aria-hidden="true"></span>
+    <span class="mark-name">GreenRetroLab</span>
+    <span class="mark-sub">逆合成路线评估台</span>
+  </div>
+  <dl class="engine">
+    <div><dt>逆合成</dt><dd>USPTO 模板 · MCTS</dd></div>
+    <div><dt>库存</dt><dd>ZINC20 in-stock · 922 万</dd></div>
+    <div><dt>先例库</dt><dd>USPTO 真实反应 · 55 万条</dd></div>
+    <div><dt>运行</dt><dd id="engine-host">本机回环 · 127.0.0.1</dd></div>
+  </dl>
+  <div class="progress" id="progress" hidden><span></span></div>
+</header>
+
+<div class="shell">
+
+  <aside class="rail">
+
+    <section class="panel">
+      <h2 class="panel-title">样本输入</h2>
+      <p class="panel-note">输入 SMILES 或分子名（中英文均可，名字需联网解析）。每行一个分子，多行按批量评估。</p>
+      <textarea id="input" class="mono" rows="3" spellcheck="false"
+                placeholder="CN1C=NC2=C1C(=O)N(C(=O)N2C)C"></textarea>
+      <div class="chips" id="chips">
+        <button type="button" class="chip" data-fill="咖啡因">咖啡因</button>
+        <button type="button" class="chip" data-fill="阿司匹林">阿司匹林</button>
+        <button type="button" class="chip" data-fill="布洛芬">布洛芬</button>
+        <button type="button" class="chip" data-fill="扑热息痛">扑热息痛</button>
+      </div>
+      <details class="params">
+        <summary>运行参数</summary>
+        <div class="param-grid">
+          <label>报告路线条数 <input type="number" id="opt-routes" value="3" min="1" max="12"></label>
+          <label>MCTS 迭代上限 <input type="number" id="opt-iterations" value="200" min="10" step="50"></label>
+          <label class="check"><input type="checkbox" id="opt-offline"> 离线运行（不联网取 GHS 危害数据）</label>
+          <label class="check"><input type="checkbox" id="opt-skipretro"> 只做性质预测（跳过逆合成）</label>
+        </div>
+      </details>
+      <button type="button" class="btn-primary" id="run">开始评估</button>
+      <p class="kbd-hint"><kbd>Ctrl</kbd> + <kbd>Enter</kbd> 提交 · 单个分子约 40 秒（含模型加载）</p>
+    </section>
+
+    <section class="panel">
+      <h2 class="panel-title">本次会话</h2>
+      <ol class="history" id="history"><li class="history-empty">尚无记录</li></ol>
+    </section>
+
+    <section class="panel panel-log">
+      <h2 class="panel-title">运行日志 <button type="button" class="link-btn" id="clear-log">清空</button></h2>
+      <pre class="log mono" id="log"></pre>
+    </section>
+
+    <section class="panel">
+      <h2 class="panel-title">环境</h2>
+      <dl class="kv" id="env-kv"><div><dt>状态</dt><dd>检测中…</dd></div></dl>
+      <button type="button" class="btn-ghost" id="doctor">运行环境自检</button>
+      <pre class="log mono doctor-out" id="doctor-out" hidden></pre>
+    </section>
+
+  </aside>
+
+  <main class="report" id="report">
+
+    <section class="empty">
+      <h1 class="empty-title">输入目标分子，得到一份可核对的逆合成路线评估</h1>
+      <p class="empty-lede">
+        本页面只讨论<b>合成路线</b>：用逆合成规划找出可购买的路线，逐条做<b>可行性复核</b>
+        （真实反应库 kNN 先例检索 + 内置过滤器 + 结构级规则），再按<b>科学分优先</b>排序并给出推荐。
+        分子性质（溶解度/毒性）与绿色评分仍在后台计算、写入报告文件，但不在本页面展示。
+      </p>
+      <ol class="toc">
+        <li><b>01 样本</b><span>2D 结构式、分子式/分子量，并识别中文名/商品名/俗名</span></li>
+        <li><b>02 逆合成路线</b><span>结构式流程图 + 每步反应模板、真实反应库先例、可行性与先例相似度</span></li>
+        <li><b>03 路线排序与推荐</b><span>科学分（先例 45% + 过滤器 25% + 模板先例 30%）优先，绿色性只作次级因素</span></li>
+        <li><b>04 方法学审阅</b><span>识别硫酸二甲酯、NaH/DMF、计量氧化等过时做法，给出当代替代与可点开的 DOI 文献</span></li>
+        <li><b>05 综合结论</b><span>只与合成路线有关：推荐哪条、为什么、需要人工确认什么</span></li>
+        <li><b>06 路线流程图版</b><span>候选路线的结构式流程图版（论文式排版）</span></li>
+      </ol>
+      <p class="empty-foot">
+        全部计算在本机完成，分子结构与路线结果不会离开这台机器。
+        先例检索基于公开的 USPTO 反应数据（USPTO-50k + USPTO-full，约 55 万条真实反应），离线运行。
+      </p>
+    </section>
+
+  </main>
+</div>
+
+<footer class="colophon">
+  <span>GreenRetroLab</span>
+  <span>逆合成：AiZynthFinder 4.4.1（USPTO 策略）</span>
+  <span>先例库：USPTO-50k + USPTO-full（公开反应数据）</span>
+  <span>方法学文献：Crossref（真实 DOI）</span>
+  <span>性质与绿色评分在后台计算，仅写入报告文件</span>
+  <span>结果仅供研究参考</span>
+</footer>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+expansion:
+  uspto:
+    - D:\deeepseek\GreenRetroLab\aizynth_data\uspto_model.onnx
+    - D:\deeepseek\GreenRetroLab\aizynth_data\uspto_templates.csv.gz
+filter:
+  uspto: D:\deeepseek\GreenRetroLab\aizynth_data\uspto_filter_model.onnx
+stock:
+  zinc:
+    type: zinc_bloom_stock.KekuleMolbloomQuery
+    path: D:\deeepseek\GreenRetroLab\aizynth_data\zinc_instock_mini.bloom
+search:
+  iteration_limit: 200
+  time_limit: 300
+  max_transforms: 6

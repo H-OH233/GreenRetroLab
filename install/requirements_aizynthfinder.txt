@@ -1,0 +1,28 @@
+# aizynthfinder 环境依赖（Python 3.11）
+# 注意：aizynthfinder 与 reaction-utils 由 setup_windows.ps1 用 --no-deps 安装，
+#       因为 [all] 额外依赖里的 route-distances 会拖入 pytorch-lightning 并触发 pip 依赖回溯死循环，
+#       而 route-distances 只用于路线聚类，本工具不需要。
+# 版本红线：aizynthfinder 4.4.1 要求 rdkit<2024；且它不兼容 numpy 2.x。
+numpy<2.0.0
+pandas<3.0.0,>=1.0.0
+tables<4.0.0,>=3.6.1
+rdkit<2024.0.0,>=2023.9.1
+rdchiral<2.0.0,>=1.0.0
+networkx<3.0,>=2.4
+pillow<13.0.0,>=12.0.0
+jinja2<4.0.0,>=3.0.0
+paretoset<2.0.0
+deprecated<2.0.0,>=1.2.10
+PyYAML
+requests<3.0.0
+tqdm<5.0.0
+onnxruntime<2.0.0,>=1.23.0
+onnx
+molbloom<3.0.0,>=2.1.0
+scipy<2.0,>=1.0
+matplotlib<4.0.0
+# reaction-utils(rxnutils) 的运行时依赖（用 --no-deps 装它时要手动补这几个）
+wrapt-timeout-decorator
+xxhash
+swifter
+apted

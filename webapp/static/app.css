@@ -1,0 +1,516 @@
+/* ==========================================================================
+   GreenRetroLab — 界面样式
+   --------------------------------------------------------------------------
+   设计取向：把「实验室仪器上位机 + 期刊式报告」的语汇搬进浏览器，刻意避开
+   常见 AI 生成风格（紫蓝渐变、玻璃拟态、发光投影、emoji 图标、圆角药丸）。
+
+   借鉴对象：
+     · PubChem 化合物页      —— 左侧标识/性质表 + 右侧正文，微标签 + 发丝线
+     · Reaxys / SciFinder    —— 高密度结果表，等宽数字，克制的状态色
+     · NIST WebBook / 期刊   —— 衬线标题、§ 编号、脚注式溯源
+     · 色谱/质谱工作站软件    —— 顶部状态条、日志窗格、等宽读数
+     · Are.na 等编辑型站点    —— 暖纸底色、单一强调色、大量留白
+
+   基本约束：不用渐变、不用投影、圆角 ≤3px、只用 1px 边框区分层次。
+   ========================================================================== */
+
+:root {
+  color-scheme: light;       /* 避免系统深色模式把表单控件染成深色 */
+  --paper:        #f4f2ec;   /* 页面底色：暖纸 */
+  --panel:        #fbfaf6;   /* 面板底色：略亮 */
+  --panel-2:      #f0eee7;   /* 次级底色（表头/代码块） */
+  --ink:          #1a1d20;   /* 正文墨色 */
+  --ink-2:        #565c63;   /* 次级文字 */
+  --ink-3:        #8b9199;   /* 弱化文字 */
+  --rule:         #ddd8cd;   /* 发丝线 */
+  --rule-2:       #ebe7dd;   /* 更浅的分隔线 */
+  --accent:       #1d5b79;   /* 唯一强调色：石油蓝 */
+  --accent-soft:  #e7eef2;
+  --ok:           #2f6f43;
+  --warn:         #a4650a;
+  --bad:          #9c3227;
+  --grade-a:      #2f6f43;
+  --grade-b:      #6f8f36;
+  --grade-c:      #b07d12;
+  --grade-d:      #9c3227;
+
+  --mono: "Cascadia Mono", Consolas, "SF Mono", ui-monospace, monospace;
+  --serif: Georgia, "Times New Roman", "Songti SC", SimSun, serif;
+  --sans: "Segoe UI", "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+
+  --rail: 340px;
+  --radius: 2px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 14px/1.62 var(--sans);
+  text-rendering: optimizeLegibility;
+}
+
+.mono { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--rule); }
+a:hover { border-bottom-color: var(--accent); }
+
+::selection { background: #d9e6ee; }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ============================================================ 顶部状态条 */
+
+.topbar {
+  position: sticky; top: 0; z-index: 30;
+  display: flex; align-items: center; gap: 28px;
+  padding: 10px 22px 9px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--rule);
+}
+
+.mark { display: flex; align-items: baseline; gap: 10px; }
+.mark-rule {
+  width: 9px; height: 9px; background: var(--accent);
+  display: inline-block; transform: translateY(-1px);
+}
+.mark-name { font: 600 16px/1 var(--serif); letter-spacing: .01em; }
+.mark-sub { font-size: 12.5px; color: var(--ink-2); }
+
+.engine { display: flex; gap: 22px; margin: 0 0 0 auto; }
+.engine > div { display: flex; flex-direction: column; gap: 1px; }
+.engine dt {
+  font-size: 10px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-3);
+}
+.engine dd { margin: 0; font-size: 12px; color: var(--ink-2); }
+
+/* 运行中的不确定进度条：细线，不做动画上的花活 */
+.progress {
+  position: absolute; left: 0; right: 0; bottom: -1px; height: 2px;
+  background: var(--rule-2); overflow: hidden;
+}
+.progress > span {
+  position: absolute; inset: 0 auto 0 0; width: 34%;
+  background: var(--accent);
+  animation: slide 1.5s cubic-bezier(.4, 0, .2, 1) infinite;
+}
+@keyframes slide {
+  0%   { left: -34%; }
+  100% { left: 100%; }
+}
+
+/* ============================================================ 骨架 */
+
+.shell {
+  display: grid;
+  grid-template-columns: var(--rail) minmax(0, 1fr);
+  align-items: start;
+  min-height: calc(100vh - 49px - 41px);   /* 内容少时也把页脚压到底部 */
+}
+
+.rail {
+  border-right: 1px solid var(--rule);
+  padding: 18px 18px 60px;
+  display: flex; flex-direction: column; gap: 18px;
+  position: sticky; top: 49px;
+  max-height: calc(100vh - 49px);
+  overflow-y: auto;
+}
+
+.panel { display: flex; flex-direction: column; gap: 9px; }
+
+.panel-title {
+  margin: 0;
+  font: 600 13px/1 var(--sans);
+  letter-spacing: .02em;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--rule);
+  display: flex; align-items: baseline; justify-content: space-between;
+}
+
+.panel-note, .hint { margin: 0; font-size: 12px; color: var(--ink-2); line-height: 1.6; }
+
+textarea, input[type="number"], input[type="text"] {
+  width: 100%; padding: 8px 9px;
+  background: #fff; color: var(--ink);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  font-size: 13px;
+}
+textarea { resize: vertical; line-height: 1.5; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  padding: 3px 9px;
+  background: transparent; color: var(--ink-2);
+  border: 1px solid var(--rule); border-radius: var(--radius);
+  font: inherit; font-size: 12px; cursor: pointer;
+}
+.chip:hover { border-color: var(--ink-3); color: var(--ink); }
+
+.params { border-top: 1px dashed var(--rule); padding-top: 8px; }
+.params summary {
+  cursor: pointer; font-size: 12px; color: var(--ink-2);
+  list-style: none; display: flex; align-items: center; gap: 6px;
+}
+.params summary::before { content: "+"; font-family: var(--mono); color: var(--ink-3); }
+.params[open] summary::before { content: "−"; }
+.param-grid { display: flex; flex-direction: column; gap: 8px; margin: 10px 0 2px; }
+.param-grid label {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  font-size: 12px; color: var(--ink-2);
+}
+.param-grid input[type="number"] { width: 96px; }
+.param-grid label.check { justify-content: flex-start; }
+
+.btn-primary {
+  padding: 9px 14px;
+  background: var(--accent); color: #fff;
+  border: 1px solid var(--accent); border-radius: var(--radius);
+  font: 600 13.5px/1 var(--sans); cursor: pointer;
+}
+.btn-primary:hover { background: #17516c; }
+.btn-primary:disabled { background: #b9c3c9; border-color: #b9c3c9; cursor: default; }
+
+.btn-ghost, .link-btn {
+  padding: 6px 11px;
+  background: transparent; color: var(--ink-2);
+  border: 1px solid var(--rule); border-radius: var(--radius);
+  font: inherit; font-size: 12px; cursor: pointer;
+}
+.btn-ghost:hover { border-color: var(--ink-3); color: var(--ink); }
+.link-btn { border: none; padding: 0; color: var(--accent); font-size: 11.5px; }
+.link-btn:hover { text-decoration: underline; }
+
+.kbd-hint { margin: 0; font-size: 11.5px; color: var(--ink-3); }
+kbd {
+  font: 11px var(--mono); padding: 1px 4px;
+  border: 1px solid var(--rule); border-bottom-width: 2px;
+  border-radius: 2px; background: #fff; color: var(--ink-2);
+}
+
+/* ---------------- 会话历史 ---------------- */
+
+.history { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.history-empty { font-size: 12px; color: var(--ink-3); }
+.history li + li { border-top: 1px solid var(--rule-2); }
+.history button {
+  display: flex; align-items: baseline; gap: 8px; width: 100%;
+  padding: 7px 4px; background: none; border: none; cursor: pointer;
+  font: inherit; text-align: left; color: var(--ink);
+}
+.history button:hover { background: var(--panel-2); }
+.history .h-label { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.history .h-val { font: 11.5px var(--mono); color: var(--ink-2); }
+.history .h-grade { font: 600 11.5px var(--mono); }
+
+/* ---------------- 日志 ---------------- */
+
+.panel-log .log {
+  margin: 0; max-height: 210px; overflow: auto;
+  padding: 8px 9px;
+  background: var(--panel-2);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  font-size: 11.5px; line-height: 1.65; color: var(--ink-2);
+  white-space: pre-wrap; word-break: break-all;
+}
+.log .t { color: var(--ink-3); }
+.log .warn { color: var(--warn); }
+.log .err { color: var(--bad); }
+.log .ok { color: var(--ok); }
+.doctor-out { max-height: 260px; margin-top: 4px; }
+
+.kv { margin: 0; display: flex; flex-direction: column; gap: 4px; }
+.kv > div { display: flex; gap: 8px; font-size: 12px; }
+.kv dt { color: var(--ink-3); min-width: 68px; }
+.kv dd { margin: 0; color: var(--ink-2); word-break: break-all; }
+.kv dd.yes { color: var(--ok); }
+.kv dd.no { color: var(--bad); }
+
+/* ============================================================ 报告正文 */
+
+.report { padding: 26px 34px 80px; max-width: 1060px; }
+
+.empty { max-width: 720px; }
+.empty-title { margin: 6px 0 12px; font: 600 25px/1.35 var(--serif); letter-spacing: .01em; }
+.empty-lede { margin: 0 0 22px; color: var(--ink-2); }
+.empty-foot {
+  margin: 24px 0 0; padding-top: 14px; border-top: 1px solid var(--rule);
+  font-size: 12.5px; color: var(--ink-2);
+}
+.toc { list-style: none; margin: 0; padding: 0; }
+.toc li {
+  display: flex; gap: 14px; padding: 9px 0; border-top: 1px solid var(--rule-2);
+}
+.toc li:last-child { border-bottom: 1px solid var(--rule-2); }
+.toc b { font: 600 12px var(--mono); color: var(--accent); min-width: 62px; }
+.toc span { color: var(--ink-2); font-size: 13px; }
+
+/* ---------------- 章节标题 ---------------- */
+
+.sec { margin: 0 0 30px; }
+.sec-head {
+  display: flex; align-items: baseline; gap: 12px;
+  padding-bottom: 7px; margin-bottom: 14px;
+  border-bottom: 1px solid var(--rule);
+}
+.sec-num { font: 600 11.5px var(--mono); color: var(--accent); letter-spacing: .04em; }
+.sec-title { margin: 0; font: 600 15px/1.3 var(--serif); letter-spacing: .01em; }
+.sec-note { margin-left: auto; font-size: 11.5px; color: var(--ink-3); }
+
+/* ---------------- 样本标识区 ---------------- */
+
+.sample { display: grid; grid-template-columns: minmax(0, 320px) minmax(0, 1fr); gap: 24px; }
+.structure {
+  background: #fff; border: 1px solid var(--rule); border-radius: var(--radius);
+  padding: 6px; display: flex; align-items: center; justify-content: center;
+}
+.structure svg { width: 100%; height: auto; display: block; }
+
+table.id-table { width: 100%; border-collapse: collapse; }
+table.id-table th, table.id-table td {
+  text-align: left; padding: 6px 0; vertical-align: top;
+  border-bottom: 1px solid var(--rule-2);
+}
+table.id-table th {
+  width: 116px; font-weight: 400; font-size: 12px; color: var(--ink-3);
+}
+table.id-table td { font-size: 12.5px; word-break: break-all; }
+table.id-table td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+/* ---------------- 通用数据表 ---------------- */
+
+table.data { width: 100%; border-collapse: collapse; }
+table.data thead th {
+  /* 注意：不做 text-transform: uppercase —— 化学里大小写有意义（logS / logP / hERG / Tox21） */
+  font: 400 10.5px/1.4 var(--sans); letter-spacing: .09em;
+  color: var(--ink-3); text-align: left;
+  padding: 0 10px 6px 0; border-bottom: 1px solid var(--rule);
+  white-space: nowrap;
+}
+table.data tbody td {
+  padding: 7px 10px 7px 0; border-bottom: 1px solid var(--rule-2);
+  font-size: 12.5px; vertical-align: top;
+}
+table.data tbody tr:hover { background: var(--panel-2); }
+table.data td.num, table.data th.num { font-family: var(--mono); font-variant-numeric: tabular-nums; text-align: right; }
+table.data td.mid { color: var(--ink-2); }
+table.data tr.em td { background: var(--accent-soft); }
+table.data tr.dim td { color: var(--ink-3); }
+
+/* 风险/等级标签 */
+.tag {
+  display: inline-block; padding: 1px 6px;
+  font: 11px var(--mono); border: 1px solid currentColor; border-radius: var(--radius);
+}
+.tag.lv0, .tag.lv1 { color: var(--ok); }
+.tag.lv2 { color: var(--warn); }
+.tag.lv3 { color: var(--bad); }
+.tag.mute { color: var(--ink-3); }
+.tag.hi { color: var(--bad); }
+.tag.mid { color: var(--warn); }
+.tag.lo { color: var(--ink-2); }
+
+/* 概率小条 */
+.mini {
+  display: inline-block; width: 62px; height: 5px; background: var(--rule-2);
+  vertical-align: middle; position: relative; top: -1px;
+}
+.mini > i { display: block; height: 100%; background: var(--ok); }
+.mini.warn > i { background: var(--warn); }
+.mini.bad  > i { background: var(--bad); }
+
+/* 绿色评分条 */
+.score-cell { display: flex; align-items: center; gap: 8px; justify-content: flex-end; }
+.score-bar { width: 84px; height: 4px; background: var(--rule-2); display: inline-block; }
+.score-bar > i { display: block; height: 100%; }
+.grade {
+  display: inline-block; min-width: 20px; text-align: center;
+  font: 600 11.5px var(--mono); padding: 1px 0;
+  border: 1px solid currentColor; border-radius: var(--radius);
+}
+.g-A { color: var(--grade-a); } .g-B { color: var(--grade-b); }
+.g-C { color: var(--grade-c); } .g-D { color: var(--grade-d); }
+
+/* ---------------- 溶解度标尺 ---------------- */
+
+.scale { margin: 4px 0 10px; }
+.scale-track {
+  position: relative; height: 26px;
+  border: 1px solid var(--rule); background: #fff; border-radius: var(--radius);
+  background-image: linear-gradient(to right,
+    rgba(156,50,39,.10) 0 33%, rgba(176,125,18,.10) 33% 50%, rgba(47,111,67,.10) 50% 100%);
+}
+.scale-track .tick {
+  position: absolute; top: -1px; bottom: -1px; width: 1px; background: var(--rule);
+}
+.scale-track .mark {
+  position: absolute; top: 50%; width: 11px; height: 11px; margin: -6px 0 0 -6px;
+  background: var(--accent); border: 2px solid #fff; border-radius: 50%;
+}
+.scale-labels { position: relative; height: 15px; font: 11px var(--mono); color: var(--ink-3); }
+.scale-labels span { position: absolute; transform: translateX(-50%); }
+
+/* 数值带"过时做法"标记 */
+table.data td.num.hot { color: var(--warn); font-weight: 600; }
+
+/* 时代性审阅里的建议详情与文献行 */
+.advice-detail { margin: 6px 0 0 14px; display: flex; flex-direction: column; gap: 3px; }
+.advice-detail > div { font-size: 12.5px; }
+.cite {
+  font-size: 11.5px; color: var(--ink-2);
+  padding-left: 10px; border-left: 2px solid var(--rule);
+}
+.cite a { color: var(--accent); border-bottom: 1px solid var(--rule); }
+.cite a:hover { border-bottom-color: var(--accent); }
+.cite i { color: var(--ink-3); }
+
+/* ---------------- 提示块（注意/警示） ---------------- */
+
+.note {
+  border: 1px solid var(--rule); border-left: 3px solid var(--ink-3);
+  background: var(--panel); padding: 9px 12px; margin: 10px 0;
+  font-size: 12.5px; color: var(--ink-2); border-radius: 0 var(--radius) var(--radius) 0;
+}
+.note.warn { border-left-color: var(--warn); }
+.note.bad  { border-left-color: var(--bad); }
+.note b { color: var(--ink); }
+
+/* ---------------- 统计条 ---------------- */
+
+.stats { display: flex; flex-wrap: wrap; gap: 0; border: 1px solid var(--rule); border-radius: var(--radius); overflow: hidden; margin-bottom: 14px; }
+.stats > div { flex: 1 1 120px; padding: 8px 12px; border-right: 1px solid var(--rule-2); }
+.stats > div:last-child { border-right: none; }
+.stats dt { font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
+.stats dd { margin: 2px 0 0; font: 13px var(--mono); }
+
+/* ---------------- 路线卡 ---------------- */
+
+.route { border: 1px solid var(--rule); border-radius: var(--radius); margin-bottom: 12px; background: var(--panel); }
+.route > header {
+  display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+  padding: 9px 12px; border-bottom: 1px solid var(--rule);
+  background: var(--panel-2);
+}
+.route .r-id { font: 600 12.5px var(--mono); }
+.route .r-meta { font: 12px var(--mono); color: var(--ink-2); }
+.route .r-flags { margin-left: auto; display: flex; gap: 6px; align-items: center; }
+.route .body { padding: 10px 12px 4px; }
+.route.dim { opacity: .72; }
+
+.steps { list-style: none; margin: 0 0 10px; padding: 0; }
+.steps li { padding: 7px 0; border-bottom: 1px dotted var(--rule); font-size: 12.5px; }
+.steps li:last-child { border-bottom: none; }
+.steps .lbl { display: inline-block; min-width: 52px; color: var(--ink-3); font-size: 11.5px; }
+.steps .rx { font-family: var(--mono); word-break: break-all; }
+.steps .arrow { color: var(--accent); padding: 0 5px; }
+.steps .meta { color: var(--ink-3); font: 11px var(--mono); margin-top: 3px; }
+
+/* ---------------- 论文式反应流程图（结构式 + 箭头条件） ---------------- */
+
+figure.scheme { margin: 0 0 12px; }
+figure.scheme img {
+  width: 100%; height: auto; display: block;
+  background: #fff; border: 1px solid var(--rule); border-radius: var(--radius);
+}
+figure.scheme figcaption {
+  margin-top: 6px; font-size: 11.5px; color: var(--ink-2);
+  padding-top: 6px; border-top: 1px solid var(--rule-2);
+}
+table.steps-table { margin-bottom: 12px; }
+table.steps-table thead th { border-bottom: 1px solid var(--rule-2); }
+ul.pl-rules { margin: 8px 0 0; padding-left: 18px; }
+ul.pl-rules li { margin-bottom: 6px; font-size: 12.5px; }
+ul.pl-rules li .mid { margin-top: 2px; }
+table.data td.molcell, table.data th.molcell { width: 1%; white-space: nowrap; padding: 6px 8px; }
+img.molimg {
+  display: block; width: 138px; height: auto;
+  background: #fff; border: 1px solid var(--rule-2); border-radius: var(--radius);
+}
+
+/* ---------------- 图表 ---------------- */
+
+.figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 18px; }
+figure.fig { margin: 0; }
+figure.fig img {
+  width: 100%; height: auto; display: block;
+  background: #fff; border: 1px solid var(--rule); border-radius: var(--radius);
+}
+figure.fig figcaption {
+  margin-top: 7px; font-size: 11.5px; color: var(--ink-2);
+  padding-top: 6px; border-top: 1px solid var(--rule-2);
+}
+
+/* ---------------- 结论 ---------------- */
+
+.advice { counter-reset: a; list-style: none; margin: 0; padding: 0; }
+.advice li {
+  counter-increment: a; position: relative;
+  padding: 8px 0 8px 34px; border-bottom: 1px solid var(--rule-2); font-size: 13px;
+}
+.advice li:last-child { border-bottom: none; }
+.advice li::before {
+  content: counter(a, decimal-leading-zero);
+  position: absolute; left: 0; top: 9px;
+  font: 11.5px var(--mono); color: var(--accent);
+}
+
+/* ---------------- 原始报告 ---------------- */
+
+details.raw { border-top: 1px solid var(--rule); padding-top: 10px; }
+details.raw summary { cursor: pointer; font-size: 12.5px; color: var(--ink-2); }
+details.raw pre {
+  margin: 10px 0 0; padding: 12px; overflow: auto; max-height: 460px;
+  background: var(--panel-2); border: 1px solid var(--rule); border-radius: var(--radius);
+  font-size: 11.5px; line-height: 1.65; color: var(--ink-2);
+}
+
+/* ---------------- 批量 ---------------- */
+
+.tabs { display: flex; flex-wrap: wrap; gap: 0; border-bottom: 1px solid var(--rule); margin-bottom: 16px; }
+.tabs button {
+  padding: 7px 12px; background: none; border: none; border-bottom: 2px solid transparent;
+  font: inherit; font-size: 12.5px; color: var(--ink-2); cursor: pointer; margin-bottom: -1px;
+}
+.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); font-weight: 600; }
+.tabs button:hover { color: var(--ink); }
+
+/* ---------------- 页脚 ---------------- */
+
+.colophon {
+  display: flex; flex-wrap: wrap; gap: 18px;
+  padding: 12px 22px; border-top: 1px solid var(--rule);
+  background: var(--panel); font-size: 11.5px; color: var(--ink-3);
+}
+
+/* ============================================================ 响应式 */
+
+@media (max-width: 1120px) {
+  .shell { grid-template-columns: 1fr; }
+  .rail { position: static; max-height: none; border-right: none; border-bottom: 1px solid var(--rule); }
+  .report { padding: 22px 18px 60px; }
+  .sample { grid-template-columns: 1fr; }
+  .engine { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress > span { animation: none; width: 100%; }
+}
+
+/* ============================================================ 打印：只留报告 */
+
+@media print {
+  .topbar, .rail, .colophon { display: none; }
+  .shell { grid-template-columns: 1fr; }
+  .report { padding: 0; max-width: none; }
+  .route { break-inside: avoid; }
+}

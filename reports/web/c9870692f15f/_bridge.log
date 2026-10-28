@@ -1,0 +1,257 @@
+[bridge] 加载模型（RF / GraphConv / Tox21）...
+No normalization for SPS. Feature removed!
+No normalization for AvgIpc. Feature removed!
+No normalization for NumAmideBonds. Feature removed!
+No normalization for NumAtomStereoCenters. Feature removed!
+No normalization for NumBridgeheadAtoms. Feature removed!
+No normalization for NumHeterocycles. Feature removed!
+No normalization for NumSpiroAtoms. Feature removed!
+No normalization for NumUnspecifiedAtomStereoCenters. Feature removed!
+No normalization for Phi. Feature removed!
+WARNING:tensorflow:From D:\miniconda3\envs\molprop\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+WARNING:tensorflow:From D:\miniconda3\envs\molprop\lib\site-packages\tensorflow\python\util\deprecation.py:588: calling function (from tensorflow.python.eager.polymorphic_function.polymorphic_function) with experimental_relax_shapes is deprecated and will be removed in a future version.
+Instructions for updating:
+experimental_relax_shapes is deprecated, use reduce_retracing instead
+Skipped loading modules with pytorch-geometric dependency, missing a dependency. No module named 'torch_geometric'
+Skipped loading modules with transformers dependency. No module named 'transformers'
+cannot import name 'HuggingFaceModel' from 'deepchem.models.torch_models' (D:\miniconda3\envs\molprop\lib\site-packages\deepchem\models\torch_models\__init__.py)
+Skipped loading modules with pytorch-geometric dependency, missing a dependency. cannot import name 'DMPNN' from 'deepchem.models.torch_models' (D:\miniconda3\envs\molprop\lib\site-packages\deepchem\models\torch_models\__init__.py)
+Skipped loading modules with pytorch-lightning dependency, missing a dependency. No module named 'lightning'
+Skipped loading some Jax models, missing a dependency. No module named 'jax'
+WARNING:tensorflow:From D:\miniconda3\envs\molprop\lib\site-packages\keras\src\backend.py:873: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+[bridge] 模型就绪，用时 15.4 秒；开始评估 1 个分子
+[13:41:01] DEPRECATION WARNING: please use MorganGenerator
+[13:41:01] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:01] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:01] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:01] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:01] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:01] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:01] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:01] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:01] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:01] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:01] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:01] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:01] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:01] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:01] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:02] DEPRECATION WARNING: please use MorganGenerator
+[13:41:09] DEPRECATION WARNING: please use MorganGenerator
+[13:41:11] DEPRECATION WARNING: please use MorganGenerator
+[13:41:11] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:11] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:11] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:11] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:11] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:11] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:11] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:11] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:11] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:11] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:11] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:11] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:11] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:11] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:11] DEPRECATION WARNING: please use GetValence(Chem.ValenceType.IMPLICIT) instead
+[13:41:11] DEPRECATION WARNING: please use MorganGenerator
+[13:41:11] DEPRECATION WARNING: please use MorganGenerator
+[bridge] 1/1 OK  CC(C)CC1=CC=C(C=C1)C(C)C(=O)O
+[bridge] 已写出 D:\deeepseek\GreenRetroLab\reports\web\c9870692f15f\_props.json（JSON）
+[bridge] 完成：成功 1 / 1，总用时 27.6 秒（含一次模型加载）
+WARNING:tensorflow:Detecting that an object or model or tf.train.Checkpoint is being deleted with unrestored values. See the following logs for the specific values in question. To silence these warnings, use `status.expect_partial()`. See https://www.tensorflow.org/api_docs/python/tf/train/Checkpoint#restorefor details about the status object returned by the restore function.
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer.iter
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer.beta_1
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer.beta_2
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer.decay
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer.learning_rate
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.dense.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.dense.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.regression_dense.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.regression_dense.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.kernel0
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.kernel1
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.kernel2
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.kernel3
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.kernel4
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.kernel5
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.kernel6
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.kernel7
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.kernel8
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.kernel9
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.kernel10
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.kernel11
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.kernel12
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.kernel13
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.kernel14
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.kernel15
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.kernel16
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.kernel17
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.kernel18
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.kernel19
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.kernel20
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.bias0
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.bias1
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.bias2
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.bias3
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.bias4
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.bias5
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.bias6
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.bias7
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.bias8
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.bias9
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.bias10
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.bias11
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.bias12
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.bias13
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.bias14
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.bias15
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.bias16
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.bias17
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.bias18
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.bias19
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.0.bias20
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.kernel0
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.kernel1
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.kernel2
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.kernel3
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.kernel4
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.kernel5
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.kernel6
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.kernel7
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.kernel8
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.kernel9
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.kernel10
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.kernel11
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.kernel12
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.kernel13
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.kernel14
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.kernel15
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.kernel16
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.kernel17
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.kernel18
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.kernel19
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.kernel20
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.bias0
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.bias1
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.bias2
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.bias3
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.bias4
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.bias5
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.bias6
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.bias7
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.bias8
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.bias9
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.bias10
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.bias11
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.bias12
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.bias13
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.bias14
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.bias15
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.bias16
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.bias17
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.bias18
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.bias19
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.graph_convs.1.bias20
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.batch_norms.0.gamma
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.batch_norms.0.beta
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.batch_norms.1.gamma
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.batch_norms.1.beta
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.batch_norms.2.gamma
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'm' for (root).model.batch_norms.2.beta
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.dense.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.dense.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.regression_dense.kernel
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.regression_dense.bias
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.kernel0
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.kernel1
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.kernel2
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.kernel3
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.kernel4
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.kernel5
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.kernel6
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.kernel7
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.kernel8
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.kernel9
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.kernel10
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.kernel11
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.kernel12
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.kernel13
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.kernel14
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.kernel15
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.kernel16
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.kernel17
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.kernel18
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.kernel19
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.kernel20
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.bias0
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.bias1
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.bias2
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.bias3
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.bias4
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.bias5
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.bias6
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.bias7
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.bias8
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.bias9
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.bias10
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.bias11
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.bias12
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.bias13
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.bias14
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.bias15
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.bias16
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.bias17
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.bias18
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.bias19
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.0.bias20
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.kernel0
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.kernel1
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.kernel2
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.kernel3
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.kernel4
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.kernel5
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.kernel6
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.kernel7
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.kernel8
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.kernel9
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.kernel10
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.kernel11
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.kernel12
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.kernel13
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.kernel14
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.kernel15
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.kernel16
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.kernel17
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.kernel18
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.kernel19
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.kernel20
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.bias0
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.bias1
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.bias2
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.bias3
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.bias4
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.bias5
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.bias6
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.bias7
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.bias8
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.bias9
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.bias10
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.bias11
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.bias12
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.bias13
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.bias14
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.bias15
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.bias16
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.bias17
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.bias18
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.bias19
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.graph_convs.1.bias20
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.batch_norms.0.gamma
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.batch_norms.0.beta
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.batch_norms.1.gamma
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.batch_norms.1.beta
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.batch_norms.2.gamma
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer's state 'v' for (root).model.batch_norms.2.beta

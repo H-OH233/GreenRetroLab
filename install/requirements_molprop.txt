@@ -1,0 +1,15 @@
+# ai-molprop 环境依赖（Python 3.10）
+# 说明：torch 不写在这里，由 setup_windows.ps1 单独安装 CPU 版（避免误装 2.5GB 的 CUDA 版）
+# 版本红线：tensorflow 必须 2.15.x —— 本项目用的 deepchem 2.8 里 GraphConvModel 是 Keras2 时代实现，
+#           keras3（tensorflow>=2.16 自带）与之不兼容。
+numpy==1.26.4
+deepchem==2.8.0
+rdkit==2026.3.6
+scikit-learn==1.7.2
+pandas==2.3.3
+matplotlib==3.10.9
+joblib==1.6.0
+scipy==1.15.3
+tensorflow==2.15.1
+# 可选：结构简式图片识别（网页上传图片功能需要，命令行版不需要）
+# decimer==2.8.0
